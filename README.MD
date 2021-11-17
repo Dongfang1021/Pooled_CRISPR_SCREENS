@@ -1,10 +1,13 @@
 #CRISPR Algorithms Overview
+
 ##Pooled CRISPR Screens
+
 Feature Barcode technology may be used to perform pooled CRISPR screens in an efficient and scalable fashion. For an introduction to pooled CRISPR screens, see: Perturb-Seq (Adamson et al., 2016, and Dixit et al., 2016), CRISP-seq (Jaitin et al., 2016), CROP-seq (Datlinger et al., 2017), or CRISPR-QTL (Gasperini et al., 2018). See the Glossary for definitions of terms.
 
 The goal of a pooled CRISPR screen is to use CRISPR to perturb the expression of a list of pre-identified genes and quantitatively measure the effects of those perturbations on the transcriptome of the cells of interest. The cells are typically transfected in a pooled fashion with a number of plasmids that code for guide RNAs that target the pre-selected genes of interest. Since the assay captures both transcripts and transfected guide RNAs from each cell, one can correlate the changes in the transcriptome with the perturbations received by each sub-group of cells.
 
 ##Experimental Design
+
 A wide variety of experimental designs are used in pooled CRISPR screens, depending on the nature of the biological questions being investigated and the scope of the experiment. We emphasize three general principles commonly employed in such experiments.
 
 Multiple guide RNAs per target gene. In general, it is hard to predict the functional efficacy of a guide RNA construct purely from its in silico design. In order to mitigate the risk of non-functional guide RNA molecules that do not perturb the expression of their target genes significantly, pooled CRISPR screens typically employ 2-5 guide RNA constructs per target gene.
