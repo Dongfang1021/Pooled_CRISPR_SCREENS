@@ -1,12 +1,12 @@
-#CRISPR Algorithms Overview
+# CRISPR Algorithms Overview
 
-##Pooled CRISPR Screens
+## Pooled CRISPR Screens
 
 Feature Barcode technology may be used to perform pooled CRISPR screens in an efficient and scalable fashion. For an introduction to pooled CRISPR screens, see: Perturb-Seq (Adamson et al., 2016, and Dixit et al., 2016), CRISP-seq (Jaitin et al., 2016), CROP-seq (Datlinger et al., 2017), or CRISPR-QTL (Gasperini et al., 2018). See the Glossary for definitions of terms.
 
 The goal of a pooled CRISPR screen is to use CRISPR to perturb the expression of a list of pre-identified genes and quantitatively measure the effects of those perturbations on the transcriptome of the cells of interest. The cells are typically transfected in a pooled fashion with a number of plasmids that code for guide RNAs that target the pre-selected genes of interest. Since the assay captures both transcripts and transfected guide RNAs from each cell, one can correlate the changes in the transcriptome with the perturbations received by each sub-group of cells.
 
-##Experimental Design
+## Experimental Design
 
 A wide variety of experimental designs are used in pooled CRISPR screens, depending on the nature of the biological questions being investigated and the scope of the experiment. We emphasize three general principles commonly employed in such experiments.
 
@@ -16,12 +16,12 @@ Non-targeting guide RNAs that function as negative controls. In order to measure
 
 Carefully designed and validated transfection protocol. Based on the particular transfection protocol used in the assay, the distribution of guide RNA constructs among cells can vary widely, from as few as a median of 1 guide per cell to as high as 15 per cell. The transfection protocol is usually carefully designed based on the requirements imposed by the biological questions of interest, such as the median number of guide RNA constructs per cell or the number of cells required per perturbation of interest. In addition, typically the transfection protocol is validated by some combination of PCR-based techniques and next-generation sequencing (see Methods sections of the References).
 
-##Protospacer Calling
+## Protospacer Calling
 In pooled CRISPR screens, the presence of low levels of ambient guide RNA in solution typically leads to a small number of "background" UMI counts even in cells that do not express any guide RNA constructs. In the Protospacer Calling step, Cell Ranger identifies, for each guide RNA construct specified in the Feature Reference CSV File, the sub-population of cells that express that particular guide RNA significantly above background.
 
 For each guide RNA, Cell Ranger assumes that there are two populations of cells: one that expresses the guide and one that does not. (This latter population only has UMI counts due to ambient guide RNA molecules.) To distinguish these two populations from each other, Cell Ranger fits a Gaussian Mixture Model to the log-transformed Molecules/Cell distribution for the guide RNA in question. This model calculates the probability that a given cell belongs to the population expressing the guide RNA rather than the background population, and uses that probability to identify cells expressing the guide RNA. The algorithm runs independently for each guide RNA specified in the Feature Reference CSV File.
 
-##Perturbation Efficiency and Transcriptome-Wide Effects
+## Perturbation Efficiency and Transcriptome-Wide Effects
 In pooled CRISPR screens, two central questions arise. First, to what extent did the expression of the target genes change amongst those cells expressing the guide RNAs that targeted those genes ("Perturbation Efficiency")? Second, what effects did these perturbations have on the transcriptome of those cells ("Perturbation Effects")?
 
 Both questions rely on differential expression analyses. As with Gene Expression, Cell Ranger uses the quick and simple method sSeq (Yu, Huber, & Vitek, 2013) in order to find differentially expressed genes between the perturbed cells and the control cells (cells that only contain guide RNAs designed specifically to be non-targeting). For details on the implementation of sSeq within Cell Ranger, see Gene Expression.
