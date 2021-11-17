@@ -1,0 +1,19 @@
+[Sequencing]	S1
+Number of Reads	30,108,358
+Mean Reads per Cell	6,135
+Valid Barcodes	90.4%
+Sequencing Saturation	48.9%
+Q30 Bases in Barcode	95.6%
+Q30 Bases in CRISPR Read	91.0%
+Q30 Bases in UMI	94.3%
+[Mapping]	S1
+Fraction Reads with Putative Protospacer Sequence	23.0%
+Fraction Guide Reads	22.2%
+Fraction Guide Reads Usable	19.9%
+Guide Reads Usable per Cell	1,223
+Fraction Protospacer Not Recognized	3.4%
+[Cells]	S1
+Guide Reads in Cells	90.9%
+Cells with 1 or more protospacers detected	89.7%
+Cells with 2 or more protospacers detected	17.7%
+Median UMIs per Cell (summed over all recognized protospacers)	372

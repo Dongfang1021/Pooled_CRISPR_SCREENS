@@ -1,0 +1,39 @@
+[Sequencing]	S1
+Number of Reads	96,786,072
+Valid Barcodes	97.2%
+Sequencing Saturation	7.8%
+Q30 Bases in Barcode	95.0%
+Q30 Bases in RNA Read	86.9%
+Q30 Bases in UMI	93.3%
+[Mapping]	S1
+Reads Mapped to Genome	95.9%
+Reads Mapped Confidently to Genome	92.4%
+Reads Mapped Confidently to Intergenic Regions	5.6%
+Reads Mapped Confidently to Intronic Regions	21.8%
+Reads Mapped Confidently to Exonic Regions	64.9%
+Reads Mapped Confidently to Transcriptome	60.5%
+Reads Mapped Antisense to Gene	2.0%
+[Cells]	S1
+Estimated Number of Cells	4,908
+Fraction Reads in Cells	91.6%
+Mean Reads per Cell	19,720
+Total Genes Detected	24,900
+Median Genes per Cell	3,102
+Median UMI Counts per Cell	9,064
+[CRISPR]	S1
+CRISPR: Number of Reads	30,108,358
+CRISPR: Mean Reads per Cell	6,135
+CRISPR: Valid Barcodes	90.4%
+CRISPR: Sequencing Saturation	48.9%
+CRISPR: Q30 Bases in Barcode	95.6%
+CRISPR: Q30 Bases in CRISPR Read	91.0%
+CRISPR: Q30 Bases in UMI	94.3%
+CRISPR: Fraction Reads with Putative Protospacer Sequence	23.0%
+CRISPR: Fraction Guide Reads	22.2%
+CRISPR: Fraction Guide Reads Usable	19.9%
+CRISPR: Guide Reads Usable per Cell	1,223
+CRISPR: Fraction Protospacer Not Recognized	3.4%
+CRISPR: Guide Reads in Cells	90.9%
+CRISPR: Cells with 1 or more protospacers detected	89.7%
+CRISPR: Cells with 2 or more protospacers detected	17.7%
+CRISPR: Median UMIs per Cell (summed over all recognized protospacers)	372

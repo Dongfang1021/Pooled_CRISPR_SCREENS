@@ -1,0 +1,22 @@
+[Sequencing]	S1
+Number of Reads	96,786,072
+Valid Barcodes	97.2%
+Sequencing Saturation	7.8%
+Q30 Bases in Barcode	95.0%
+Q30 Bases in RNA Read	86.9%
+Q30 Bases in UMI	93.3%
+[Mapping]	S1
+Reads Mapped to Genome	95.9%
+Reads Mapped Confidently to Genome	92.4%
+Reads Mapped Confidently to Intergenic Regions	5.6%
+Reads Mapped Confidently to Intronic Regions	21.8%
+Reads Mapped Confidently to Exonic Regions	64.9%
+Reads Mapped Confidently to Transcriptome	60.5%
+Reads Mapped Antisense to Gene	2.0%
+[Cells]	S1
+Estimated Number of Cells	4,908
+Fraction Reads in Cells	91.6%
+Mean Reads per Cell	19,720
+Total Genes Detected	24,900
+Median Genes per Cell	3,102
+Median UMI Counts per Cell	9,064
